@@ -1,5 +1,5 @@
 angular.module '%module%.landing'
-.directive 'simpleBarChart', ->
+.directive 'lineChart', ->
   restrict: 'E'
   scope:
     chartData: '='
