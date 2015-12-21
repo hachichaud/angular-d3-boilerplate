@@ -7,4 +7,4 @@ angular.module '%module%.landing'
     controller: 'LandingCtrl'
   .state 'landing.simple-bar-chart',
     url: 'simple-bar-chart'
-    template: '<div>{{ highlight }}</div><master data="data" selected-value="highlight"></master>'
+    templateUrl: 'landing/views/simple-bar-chart.html'
