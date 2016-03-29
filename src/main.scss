@@ -6,3 +6,13 @@
   margin: 1px;
   color: white;
 }
+
+// Color palette
+$main-color: #88b2a8 !default;
+$main-color-fade: #b2cdc6 !default;
+$text-color: #4C4C4C !default;
+$dark-color: #000000 !default;
+$emphasis-color: #f3c642 !default;
+$secondary-emphasis-color: #e78352 !default;
+
+@import 'test/styles/test'

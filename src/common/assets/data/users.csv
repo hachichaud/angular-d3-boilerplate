@@ -1,0 +1,5 @@
+username,firstname,lastname,email,some_info,creation_date,roles
+toto,toto,carotte,email1@toto.fr,info1,27/02/2015,ADMIN;EDITOR;USER
+tata,tata,aubergine,email2@toto.fr,info2,14/12/2015,EDITOR;USER
+username with long name,jean-charles,de la grande truanderie,email3@toto.fr,info3,03/03/2016,ADMIN
+username withname,marie-astrid,martin,email4@toto.fr,info4,03/03/2016,USER

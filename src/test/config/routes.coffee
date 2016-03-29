@@ -1,10 +1,10 @@
-angular.module '%module%.landing'
+angular.module '%module%.test'
 .config ($stateProvider) ->
   $stateProvider
-  .state 'landing',
-    url: '/'
-    templateUrl: 'landing/views/view.html'
-    controller: 'LandingCtrl'
+  .state 'landing.test',
+    url: 'test'
+    templateUrl: 'test/views/test.html'
+    controller: 'TestCtrl'
   # .state 'landing.simple-bar-chart',
   #   url: 'simple-bar-chart'
   #   template: '<simple-bar-chart chart-data="data"></simple-bar-chart>'
