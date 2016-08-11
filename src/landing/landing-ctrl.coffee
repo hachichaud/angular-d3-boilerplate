@@ -1,11 +1,15 @@
 angular.module '%module%.landing'
 .controller 'LandingCtrl',
 ($scope, $http) ->
-  $scope.someText = "Hello you !"
+  $scope.someText = "Test"
 
-  $http.get 'data/bar-data.csv'
+  $scope.users = []
+
+  $scope.availableRoles = ['USER', 'EDITOR', 'ADMIN']
+
+  $http.get 'data/users.csv'
   .then (res) ->
-    $scope.data = Papa.parse(
+    $scope.users = Papa.parse(
       res.data
     ,
       header: true
