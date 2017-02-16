@@ -14,6 +14,14 @@ When clicking the edit button, a form should open and allow the modification of 
 - When modifying roles/username, we should be able to see the modification in realtime
 - The roles should be editable as checkboxes
 - In term of design, the minimum is what's on 'test_user.png'
+- For users with composite firstname, display the initials like this: 
+
+```
+firstname: "Jean-Claude"
+lastname: "Van Damme"
+
+=> initials "JCV"
+```
 
 ### Additional info
 
