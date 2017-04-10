@@ -14,3 +14,36 @@ $text-color: #4C4C4C !default;
 $dark-color: #000000 !default;
 $emphasis-color: #f3c642 !default;
 $secondary-emphasis-color: #e78352 !default;
+
+// CSS ICI
+.user-list,
+.user-item {
+  width: 100%;
+}
+
+.user-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-initials {
+  width: 10%;
+  text-transform: uppercase;
+  > p {
+    border-radius: 50%;
+    background-color: $main-color;
+    color: white;
+    width: 4em;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.user-infos {
+  width: 70%;
+}
+.user-edit-button {
+  width: 20%;
+  background-color: $emphasis-color;
+}

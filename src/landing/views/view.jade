@@ -1,2 +1,28 @@
 h1 Hello!
-pre {{ users|json }}
+//- pre {{ users|json }}
+div.user-list-container(ng-controller="LandingCtrl as LandingCtrl")
+  div.user-list(ng-repeat="user in LandingCtrl.users track by $index")
+    div.user-item
+      div.user-initials
+        p {{user.initials}}
+      //- pre {{user}}
+      div.user-infos
+        p {{user.username}}
+        span(ng-repeat="role in user.roleList track by $index") &nbsp;{{role}}
+          
+      div.user-edit-button(ng-click="showForm = !showForm") EDIT
+    form.user-form(ng-show="showForm" name="userEditForm[{{$index}}]")
+      div
+        label(for="userEditForm-username-{{$index}}") Username
+        input(ng-model="user.username" name="userEditForm[{{$index}}].username" id="userEditForm-username-{{$index}}")
+      div
+        div(ng-repeat="availableRole in user.checkRole")
+          label {{availableRole}}
+          input(
+            type="checkbox"
+            checked="availableRole.checked"
+            ng-change="LandingCtrl.toggleRole(availableRole)"
+            ng-model="availableRole.checked"
+          )
+    
+    
